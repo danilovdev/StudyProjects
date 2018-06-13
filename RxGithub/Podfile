@@ -1,0 +1,39 @@
+target 'RxGithub' do
+    
+    use_frameworks!
+    
+    inhibit_all_warnings!
+    
+    # Pods for RxGithub
+    
+    # DI
+    pod 'Swinject'
+    pod 'SwinjectStoryboard'
+    
+    # Networking
+    pod 'Alamofire'
+    
+    # Rx
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'RxOptional'
+    
+    # Firebase
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
+    
+    # UI
+    pod 'Spring', :git => 'https://github.com/MengTo/Spring.git'
+    
+    target 'RxGithubTests' do
+        
+        inherit! :search_paths
+        
+        # Pods for testing
+        
+        pod 'Quick'
+        pod 'Nimble'
+    
+    end
+    
+end
